@@ -103,7 +103,7 @@ def webhook_received():
     return jsonify({
         'status': 'succeeded',
         'amount_received': data_object['amount_received'],
-    }), 200
+    }), 400
 
 
 if __name__ == '__main__':
